@@ -44,7 +44,7 @@ RUN unlink /usr/local/lib/php/extensions/no-debug-non-zts-20160303/newrelic.so \
 	&& echo '[newrelic]' >> /usr/local/etc/php/conf.d/newrelic.ini \
 	&& echo 'newrelic.enabled = true' >> /usr/local/etc/php/conf.d/newrelic.ini \
 	&& echo 'newrelic.license = ${NEWRELIC_LICENSE}' >> /usr/local/etc/php/conf.d/newrelic.ini \
- 	&& echo 'newrelic.appname = ${NEWRELIC_APPNAME}' >> /usr/local/etc/php/conf.d/newrelic.ini \
+	&& echo 'newrelic.appname = ${NEWRELIC_APPNAME}' >> /usr/local/etc/php/conf.d/newrelic.ini \
 	&& echo 'newrelic.feature_flag=laravel_queue' >> /usr/local/etc/php/conf.d/newrelic.ini \
 	&& rm -fr /opt/newrelic
 

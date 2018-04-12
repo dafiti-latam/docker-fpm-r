@@ -1,4 +1,4 @@
-FROM arielkung/fpm-r
+FROM dftlatam/docker-fpm-r
 
 # This section is only needed for development
 RUN set -xe \
